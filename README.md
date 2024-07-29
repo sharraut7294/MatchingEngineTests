@@ -36,10 +36,12 @@ Before you begin, ensure you have the following installed:
 
 2. **Install Dependencies:**
 
- Install project dependencies using npm or Yarn:
+ Install project dependencies using npm
    ```bash
-  npm install
-  or
-  yarn install
+    npm install
 
+3. **Configuration**
+Cypress Configuration
+Cypress configuration is located in cypress.config.ts. You can customize Cypress settings such as viewport size, browser configuration, and more.
 
+Example Configuration (cypress.config.ts):
