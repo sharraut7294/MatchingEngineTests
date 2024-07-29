@@ -16,7 +16,6 @@ This project is configured to use [Cypress](https://www.cypress.io/) for end-to-
   - [Run Cypress Interactive Mode](#run-cypress-interactive-mode)
   - [Run Cypress in Headless Mode](#run-cypress-in-headless-mode)
   - [Run Cypress in Specific Browser](#run-cypress-in-specific-browser)
-- [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
 
@@ -41,6 +40,8 @@ Before you begin, ensure you have the following installed:
  ```
 3. **Configuration**
 Cypress Configuration
+
+
 Cypress configuration is located in cypress.config.ts. You can customize Cypress settings such as viewport size, browser configuration, and more.
 
 Example Configuration (cypress.config.ts):
@@ -59,6 +60,8 @@ export default defineConfig({
 
  ```
 4. **TypeScript Configuration**
+
+
 TypeScript configuration is located in tsconfig.json. Adjust TypeScript settings as needed.
 
 Example Configuration (tsconfig.json):
@@ -80,6 +83,8 @@ Example Configuration (tsconfig.json):
 
  ```
 5. **Writing Tests**
+
+
 Cypress tests are located in the cypress/e2e directory. Create test files with the .ts extension for TypeScript support.
 
 Example Test File (cypress/e2e/example_spec.ts):
@@ -94,3 +99,37 @@ describe('My First Test', () => {
 
 
  ```
+
+6. **Running Tests**
+
+You can run Cypress tests in different modes:
+
+**Run Cypress Interactive Mode**
+
+To open Cypress Test Runner in interactive mode:
+
+```
+npx cypress open
+
+``` 
+
+**Run Cypress in Headless Mode**
+
+To run Cypress tests in headless mode (suitable for CI/CD):
+
+
+```
+npx cypress run
+
+```
+
+**Run Cypress in Specific Browser**
+
+
+To specify a browser (e.g., Chrome):
+
+
+```
+npx cypress run --browser chrome
+
+```
