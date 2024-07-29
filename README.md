@@ -37,5 +37,9 @@ Before you begin, ensure you have the following installed:
 2. **Install Dependencies:**
 
  Install project dependencies using npm or Yarn:
-  
+   ```bash
   npm install
+  or
+  yarn install
+
+
