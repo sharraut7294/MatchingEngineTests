@@ -1,6 +1,6 @@
 # MatchingEngineTests
  
-# Cypress Project with TypeScript
+# Cypress Test Project with TypeScript
 
 This project is configured to use [Cypress](https://www.cypress.io/) for end-to-end UI testing with [TypeScript](https://www.typescriptlang.org/). 
 
