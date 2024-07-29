@@ -11,9 +11,6 @@ This project is configured to use [Cypress](https://www.cypress.io/) for end-to-
 - [Configuration](#configuration)
 - [Writing Tests](#writing-tests)
 - [Running Tests](#running-tests)
-  - [Run Cypress Interactive Mode](#run-cypress-interactive-mode)
-  - [Run Cypress in Headless Mode](#run-cypress-in-headless-mode)
-  - [Run Cypress in Specific Browser](#run-cypress-in-specific-browser)
 
 ## Prerequisites
 
