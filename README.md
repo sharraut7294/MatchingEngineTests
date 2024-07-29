@@ -2,7 +2,7 @@
  
 # Cypress Project with TypeScript
 
-This project is configured to use [Cypress](https://www.cypress.io/) for end-to-end testing with [TypeScript](https://www.typescriptlang.org/). 
+This project is configured to use [Cypress](https://www.cypress.io/) for end-to-end UI testing with [TypeScript](https://www.typescriptlang.org/). 
 
 ## Table of Contents
 
