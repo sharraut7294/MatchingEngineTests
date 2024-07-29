@@ -16,7 +16,6 @@ This project is configured to use [Cypress](https://www.cypress.io/) for end-to-
   - [Run Cypress Interactive Mode](#run-cypress-interactive-mode)
   - [Run Cypress in Headless Mode](#run-cypress-in-headless-mode)
   - [Run Cypress in Specific Browser](#run-cypress-in-specific-browser)
-- [Additional Resources](#additional-resources)
 - [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
@@ -36,12 +35,62 @@ Before you begin, ensure you have the following installed:
 
 2. **Install Dependencies:**
 
- Install project dependencies using npm
-   ```bash
-    npm install
-
+ Install project dependencies using npm:
+ ``` 
+ npm install
+ ```
 3. **Configuration**
 Cypress Configuration
 Cypress configuration is located in cypress.config.ts. You can customize Cypress settings such as viewport size, browser configuration, and more.
 
 Example Configuration (cypress.config.ts):
+ ``` 
+ import { defineConfig } from 'cypress';
+
+export default defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      // Implement node event listeners here
+    },
+    viewportWidth: 1280,
+    viewportHeight: 720,
+  },
+});
+
+ ```
+4. **TypeScript Configuration**
+TypeScript configuration is located in tsconfig.json. Adjust TypeScript settings as needed.
+
+Example Configuration (tsconfig.json):
+``` 
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "types": ["cypress"]
+  },
+  "include": ["cypress/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+
+ ```
+5. **Writing Tests**
+Cypress tests are located in the cypress/e2e directory. Create test files with the .ts extension for TypeScript support.
+
+Example Test File (cypress/e2e/example_spec.ts):
+``` 
+describe('My First Test', () => {
+  it('should visit the homepage', () => {
+    cy.visit('https://example.cypress.io');
+    cy.contains('type').click();
+    cy.url().should('include', '/commands/actions');
+  });
+});
+
+
+ ```
