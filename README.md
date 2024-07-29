@@ -22,7 +22,7 @@ This project is configured to use [Cypress](https://www.cypress.io/) for end-to-
 Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (version 14 or later)
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/) 
 
 ## Installation
 
