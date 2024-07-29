@@ -9,8 +9,6 @@ This project is configured to use [Cypress](https://www.cypress.io/) for end-to-
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Configuration](#configuration)
-  - [Cypress Configuration](#cypress-configuration)
-  - [TypeScript Configuration](#typescript-configuration)
 - [Writing Tests](#writing-tests)
 - [Running Tests](#running-tests)
   - [Run Cypress Interactive Mode](#run-cypress-interactive-mode)
@@ -38,9 +36,10 @@ Before you begin, ensure you have the following installed:
  ``` 
  npm install
  ```
-3. **Configuration**
-Cypress Configuration
 
+## Configuration
+
+**Cypress Configuration**
 
 Cypress configuration is located in cypress.config.ts. You can customize Cypress settings such as viewport size, browser configuration, and more.
 
@@ -59,7 +58,7 @@ export default defineConfig({
 });
 
  ```
-4. **TypeScript Configuration**
+**TypeScript Configuration**
 
 
 TypeScript configuration is located in tsconfig.json. Adjust TypeScript settings as needed.
@@ -82,8 +81,7 @@ Example Configuration (tsconfig.json):
 }
 
  ```
-5. **Writing Tests**
-
+## Writing Tests
 
 Cypress tests are located in the cypress/e2e directory. Create test files with the .ts extension for TypeScript support.
 
@@ -100,7 +98,7 @@ describe('My First Test', () => {
 
  ```
 
-6. **Running Tests**
+## Running Tests
 
 You can run Cypress tests in different modes:
 
